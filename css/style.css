@@ -1219,3 +1219,96 @@ select {
     width: 100%;
   }
 }
+
+/* Cookie banner styles */
+.cookie-banner {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 12px;
+  box-shadow: 0 12px 36px rgba(15, 23, 28, 0.14);
+  padding: 12px 14px;
+  z-index: 140;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  transform: translateY(120%);
+  opacity: 0;
+  transition: transform 0.32s cubic-bezier(0.2, 0.9, 0.2, 1), opacity 0.32s ease;
+}
+.cookie-banner.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+.cookie-banner .cookie-text {
+  color: var(--dark);
+  font-size: 14px;
+  line-height: 1.35;
+  max-width: 78%;
+}
+.cookie-banner .cookie-text a {
+  color: var(--brand);
+  text-decoration: underline;
+  font-weight: 700;
+}
+.cookie-banner .cookie-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.cookie-banner .cookie-decline {
+  background: transparent;
+  border: 1px solid rgba(16, 24, 32, 0.06);
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: var(--dark);
+}
+.cookie-banner .cookie-accept {
+  background: var(--brand);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+@media (max-width: 640px) {
+  .cookie-banner {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cookie-banner .cookie-text {
+    max-width: 100%;
+    margin-bottom: 8px;
+  }
+  .cookie-banner .cookie-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+/* Cookie banner button interactions */
+.cookie-banner button {
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease,
+    background 0.18s ease;
+  font-weight: 700;
+}
+.cookie-banner .cookie-accept:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(11, 107, 107, 0.14);
+  filter: brightness(0.98);
+}
+.cookie-banner .cookie-decline:hover {
+  transform: translateY(-3px);
+  background: rgba(0, 0, 0, 0.03);
+}
+.cookie-banner button:focus-visible {
+  outline: 3px solid rgba(11, 107, 107, 0.12);
+  outline-offset: 3px;
+  border-radius: 8px;
+}

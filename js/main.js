@@ -141,6 +141,51 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   })();
 
+  // Cookie banner: inject, link to cookie.html, and handle Accept/Decline
+  (function cookieBanner() {
+    try {
+      const key = "luxurybath_cookie_consent";
+      const val = localStorage.getItem(key);
+      if (val === "accepted" || val === "declined") return;
+
+      const banner = document.createElement("div");
+      banner.className = "cookie-banner";
+      banner.innerHTML = `
+        <div class="cookie-text">We use cookies to enhance your browsing experience and analyze site traffic. By continuing to use our website, you consent to our use of cookies. <a href="cookie.html">Learn more</a></div>
+        <div class="cookie-actions">
+          <button class="cookie-decline">Decline</button>
+          <button class="cookie-accept">Accept</button>
+        </div>`;
+
+      document.body.appendChild(banner);
+      // animate in
+      requestAnimationFrame(() => banner.classList.add("show"));
+
+      function close(state) {
+        try {
+          localStorage.setItem(key, state);
+        } catch (e) {
+          // ignore storage errors
+        }
+        banner.classList.remove("show");
+        setTimeout(() => banner.remove(), 320);
+      }
+
+      banner
+        .querySelector(".cookie-accept")
+        .addEventListener("click", function () {
+          close("accepted");
+        });
+      banner
+        .querySelector(".cookie-decline")
+        .addEventListener("click", function () {
+          close("declined");
+        });
+    } catch (err) {
+      // fail silently — non-critical
+      console.warn("cookie banner init failed", err);
+    }
+  })();
   // Services list toggle: show/hide extra service cards
   (function servicesToggle() {
     const toggle = document.querySelector(".toggle-services");
