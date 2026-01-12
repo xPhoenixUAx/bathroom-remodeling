@@ -1,0 +1,33 @@
+.sidebar-row {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* On wider viewports show the sidebar cards in a single horizontal row */
+@media (min-width: 900px) {
+  .sidebar-row {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .sidebar-row .card {
+    margin: 0;
+    flex: 1 1 0;
+    min-width: 180px;
+  }
+}
+
+/* Small horizontal scroll fallback for narrow screens */
+@media (max-width: 899px) {
+  .sidebar-row {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .sidebar-row .card {
+    flex: 0 0 260px;
+  }
+}
