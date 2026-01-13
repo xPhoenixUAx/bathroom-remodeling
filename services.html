@@ -22,6 +22,7 @@
     <meta property="og:url" content="./services.html" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <link
       rel="icon"
       type="image/png"
@@ -66,7 +67,6 @@
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
             <!-- Portfolio removed -->
-            <a href="blog.html">Blog</a>
             <a href="contact.html">Contact</a>
             <a class="cta-primary" href="quote.html">Get a Free Quote</a>
           </div>
@@ -89,216 +89,266 @@
             <h1 id="services-heading">Our Bathroom Remodeling Services</h1>
             <p class="lead">Safe. Stylish. Built to Last.</p>
           </div>
-          <div class="hero-actions">
-            <a class="btn" href="quote.html">Get Free Estimate</a>
+        </div>
+      </section>
+
+      <!-- Services (editorial layout inspired by design) -->
+      <section
+        class="services-editorial"
+        aria-labelledby="services-editorial-heading"
+      >
+        <div class="services-editorial-inner">
+          <div class="svc-left">
+            <h2 id="services-editorial-heading">Mastery in Proportion</h2>
+            <p class="premium-sub">
+              Every curve and tile aligned for visual harmony.
+            </p>
+            <ol class="svc-list">
+              <li>
+                <span class="num">01</span>
+                <a href="tub-to-shower.html">Tub-to-Shower Conversions</a>
+              </li>
+              <li>
+                <span class="num">02</span>
+                <a href="shower-to-tub.html">Shower-to-Tub Conversions</a>
+              </li>
+              <li>
+                <span class="num">03</span>
+                <a href="walk-in-tubs.html">Walk-In Tubs</a>
+              </li>
+              <li>
+                <span class="num">04</span>
+                <a href="bathtubs-showers.html">New Shower Installations</a>
+              </li>
+              <li>
+                <span class="num">05</span>
+                <a href="wall-systems-liners.html"
+                  >Bathtub &amp; Shower Liners</a
+                >
+              </li>
+              <li>
+                <span class="num">06</span>
+                <a href="wall-systems-liners.html">Acrylic Bath Wall Systems</a>
+              </li>
+            </ol>
+          </div>
+
+          <div class="svc-right">
+            <div class="collage">
+              <div class="collage-item collage-item--large">
+                <img src="assets/images/tub-to-shower.jpg" alt="" />
+              </div>
+              <div class="collage-item collage-item--topright">
+                <img src="assets/images/shower-to-tube.jpeg" alt="" />
+              </div>
+
+              <div class="collage-item collage-item--bottomright">
+                <img src="assets/images/wall-sys.jpeg" alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Services Overview Grid -->
-      <section class="services-overview" aria-label="Services overview">
-        <h2 class="visually-hidden">Services</h2>
-        <ul id="services-list" class="services-grid">
-          <li class="service-card">
-            <a href="tub-to-shower.html">
-              <figure class="service-media">
-                <img
-                  src="assets/images/tub-to-shower.jpg"
-                  alt="Tub to shower conversion"
-                />
-              </figure>
-              <div class="service-body">
-                <h3>Tub-to-Shower Conversions</h3>
-                <p class="small">
-                  Create an accessible, modern shower while preserving style.
-                </p>
-                <span class="link-more">Learn more →</span>
-              </div>
-            </a>
-          </li>
-          <li class="service-card">
-            <a href="shower-to-tub.html">
-              <figure class="service-media">
-                <img
-                  src="assets/images/shower-to-tube.jpeg"
-                  alt="Shower to tub conversion"
-                />
-              </figure>
-              <div class="service-body">
-                <h3>Shower-to-Tub Conversions</h3>
-                <p class="small">
-                  Add comfort and resale value with professional tub
-                  installation.
-                </p>
-                <span class="link-more">Learn more →</span>
-              </div>
-            </a>
-          </li>
-          <li class="service-card">
-            <a href="walk-in-tubs.html">
-              <figure class="service-media">
-                <img src="assets/images/walk-to-tub.jpeg" alt="Walk-in tubs" />
-              </figure>
-              <div class="service-body">
-                <h3>Walk-In Tubs</h3>
-                <p class="small">
-                  Safe, low-threshold tubs designed for mobility and comfort.
-                </p>
-                <span class="link-more">Learn more →</span>
-              </div>
-            </a>
-          </li>
-          <li class="service-card collapsed">
-            <a href="bathtubs-showers.html">
-              <figure class="service-media">
-                <img
-                  src="assets/images/new-shower.jpeg"
-                  alt="New shower installations"
-                />
-              </figure>
-              <div class="service-body">
-                <h3>New Shower Installations</h3>
-                <p class="small">
-                  Custom and prebuilt showers with premium waterproofing.
-                </p>
-                <span class="link-more">Learn more →</span>
-              </div>
-            </a>
-          </li>
-          <li class="service-card collapsed">
-            <a href="wall-systems-liners.html">
-              <figure class="service-media">
-                <img
-                  src="assets/images/wall-sys.jpeg"
-                  alt="Wall systems and liners"
-                />
-              </figure>
-              <div class="service-body">
-                <h3>Bathtub &amp; Shower Liners</h3>
-                <p class="small">
-                  Fast, durable liners for a waterproof, low-maintenance finish.
-                </p>
-                <span class="link-more">Learn more →</span>
-              </div>
-            </a>
-          </li>
-          <li class="service-card collapsed">
-            <a href="wall-systems-liners.html">
-              <figure class="service-media">
-                <img
-                  src="assets/images/Acrylic-bath-wall-systems.jpeg"
-                  alt="Acrylic bath wall systems"
-                />
-              </figure>
-              <div class="service-body">
-                <h3>Acrylic Bath Wall Systems</h3>
-                <p class="small">
-                  Seamless, easy-clean walls that speed up remodel timelines.
-                </p>
-                <span class="link-more">Learn more →</span>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <div class="services-toggle">
-          <a
-            href="#"
-            class="link-inline toggle-services"
-            aria-expanded="false"
-            aria-controls="services-list"
-          >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              focusable="false"
-            >
-              <path d="M12 15.5l-7-7 1.4-1.4L12 12.7l5.6-5.6L19 8.5z" />
-            </svg>
-            <span>See all services</span>
-          </a>
-        </div>
-      </section>
-
-      <!-- Before / After Showcase (shared component) -->
-      <section
-        class="before-after-section"
-        aria-label="Before and after gallery"
-      >
-        <h2>Before &amp; After</h2>
-        <div class="before-after" data-component="before-after">
-          <figure>
-            <img
-              src="assets/images/master-shower-before-after.jpg"
-              alt="Before: worn bathtub"
-              class="ba-before"
-            />
-          </figure>
-          <div class="ba-caption">Completed in as little as 1–2 weeks</div>
-        </div>
-      </section>
-
-      <!-- Safety & Accessibility -->
+      <!-- Safety & Accessibility (redesigned) -->
       <section class="safety" aria-labelledby="safety-heading">
         <div class="safety-inner">
-          <h2 id="safety-heading">Safety &amp; Accessibility</h2>
-          <div class="safety-grid">
-            <ul class="safety-list">
-              <li><strong>Low-threshold entry</strong></li>
-              <li><strong>Slip-resistant floors</strong></li>
-              <li><strong>Built-in seating</strong></li>
-            </ul>
-            <ul class="safety-list">
-              <li><strong>ADA-compliant grab bars</strong></li>
-              <li><strong>Easy-clean materials</strong></li>
-            </ul>
+          <div class="safety-card glass-card">
+            <div class="safety-content">
+              <h2 id="safety-heading">Safety &amp; Accessibility</h2>
+              <p class="small">
+                Design choices that prioritize independence, comfort, and
+                long-term reliability while keeping interiors calm and refined.
+              </p>
+
+              <ul class="safety-features">
+                <li>
+                  <i data-lucide="check" class="lucide-icon"></i>
+                  <div>
+                    <strong>Low-threshold entry</strong>
+                    <div class="muted small">
+                      Easy step-in access for reduced trip risk
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <i data-lucide="shield" class="lucide-icon"></i>
+                  <div>
+                    <strong>Slip-resistant floors</strong>
+                    <div class="muted small">
+                      Textured finishes for secure footing
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <i data-lucide="log-in" class="lucide-icon"></i>
+                  <div>
+                    <strong>Built-in seating</strong>
+                    <div class="muted small">
+                      Comfortable, integrated bench options
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <i data-lucide="bar-chart-2" class="lucide-icon"></i>
+                  <div>
+                    <strong>ADA-compliant grab bars</strong>
+                    <div class="muted small">
+                      Secure mounting and elegant finishes
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <i data-lucide="droplet" class="lucide-icon"></i>
+                  <div>
+                    <strong>Easy-clean materials</strong>
+                    <div class="muted small">
+                      Durable, low-maintenance surfaces
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <figure class="safety-media">
+              <img
+                src="assets/images/walk-to-tub.jpeg"
+                alt="Walk-in tub with seating"
+              />
+            </figure>
           </div>
         </div>
       </section>
 
-      <!-- Our Process (condensed) -->
+      <!-- Our Process (premium redesign) -->
       <section class="process-condensed" aria-labelledby="process-heading">
-        <h2 id="process-heading">Our Process</h2>
-        <ol class="process-steps">
-          <li>
-            <h3>Free Consultation</h3>
+        <div class="process-card glass-card">
+          <div class="process-head">
+            <h2 id="process-heading">Our Process</h2>
             <p class="small">
-              Onsite or virtual assessment and clear estimate.
+              A clear, respectful approach — from first consultation to
+              long-term warranty.
             </p>
-          </li>
-          <li>
-            <h3>Design &amp; Material Selection</h3>
-            <p class="small">Guided choices for durability and style.</p>
-          </li>
-          <li>
-            <h3>Professional Installation</h3>
-            <p class="small">
-              Licensed teams complete work with care and protection.
-            </p>
-          </li>
-          <li>
-            <h3>Final Walkthrough &amp; Warranty</h3>
-            <p class="small">
-              We review the work and confirm your satisfaction.
-            </p>
-          </li>
-        </ol>
+          </div>
+
+          <div class="process-grid">
+            <article class="process-item">
+              <div class="process-badge">01</div>
+              <div class="process-body">
+                <h3>Free Consultation</h3>
+                <p class="small">
+                  Onsite or virtual assessment and a transparent estimate
+                  tailored to your needs.
+                </p>
+              </div>
+            </article>
+
+            <article class="process-item">
+              <div class="process-badge">02</div>
+              <div class="process-body">
+                <h3>Design &amp; Material Selection</h3>
+                <p class="small">
+                  Guided choices for durability, accessibility, and elegant
+                  finishes.
+                </p>
+              </div>
+            </article>
+
+            <article class="process-item">
+              <div class="process-badge">03</div>
+              <div class="process-body">
+                <h3>Professional Installation</h3>
+                <p class="small">
+                  Licensed teams manage the project with daily protection and
+                  clear communication.
+                </p>
+              </div>
+            </article>
+
+            <article class="process-item">
+              <div class="process-badge">04</div>
+              <div class="process-body">
+                <h3>Final Walkthrough &amp; Warranty</h3>
+                <p class="small">
+                  We review the work, ensure satisfaction, and stand behind our
+                  craftsmanship.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
 
-      <!-- Trust Signals -->
-      <section class="trust-signals">
-        <div class="trust-inner">
-          <div class="trust-badges">
-            <span class="badge">Licensed Pros</span>
-            <span class="badge">Insured</span>
-            <span class="badge">5-Year Warranty</span>
+      <!-- Metrics Block -->
+      <section class="metrics-block" aria-label="Key metrics">
+        <div class="container">
+          <div class="metrics glass-card">
+            <div class="metric">
+              <span class="metric-icon-wrap">
+                <i
+                  data-lucide="star"
+                  class="lucide-icon"
+                  aria-hidden="true"
+                ></i>
+              </span>
+              <div class="metric-value">4.9</div>
+              <div class="metric-label">Average Rating</div>
+            </div>
+            <div class="metric">
+              <span class="metric-icon-wrap">
+                <i
+                  data-lucide="briefcase"
+                  class="lucide-icon"
+                  aria-hidden="true"
+                ></i>
+              </span>
+              <div class="metric-value">15k+</div>
+              <div class="metric-label">Projects Completed</div>
+            </div>
+            <div class="metric">
+              <span class="metric-icon-wrap">
+                <i
+                  data-lucide="map-pin"
+                  class="lucide-icon"
+                  aria-hidden="true"
+                ></i>
+              </span>
+              <div class="metric-value">Nationwide</div>
+              <div class="metric-label">Service Area</div>
+            </div>
           </div>
-          <div class="trust-testimonial">
-            <blockquote class="small">
-              “Quick, clean, and reliable — Highly recommended.”
-            </blockquote>
-            <div class="muted">— A local homeowner</div>
+        </div>
+      </section>
+
+      <!-- Trust Signals (premium) -->
+      <section class="trust-signals" aria-label="Why homeowners trust us">
+        <div class="container">
+          <div class="trust-card glass-card">
+            <div class="trust-left">
+              <h3 class="kicker">Trusted by homeowners</h3>
+            </div>
+
+            <div class="trust-right">
+              <blockquote class="trust-quote">
+                “Quick, clean, and reliable — the team transformed our bathroom
+                and honored the warranty without delay.”
+              </blockquote>
+              <div class="reviewer">
+                <div>
+                  <div class="name">Emily R.</div>
+                  <div class="muted">Denver, CO</div>
+                </div>
+              </div>
+              <div class="trust-cta">
+                <a class="cta-secondary" href="testimonials.html"
+                  >Read More Reviews</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -372,6 +422,11 @@
       </div>
     </footer>
 
+    <script>
+      // Initialize Lucide icons on this page
+      if (window.lucide && typeof lucide.createIcons === "function")
+        lucide.createIcons();
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>

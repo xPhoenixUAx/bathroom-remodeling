@@ -44,6 +44,10 @@
     </script>
     <link rel="stylesheet" href="css/style.css" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Merriweather:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="icon"
       type="image/png"
       sizes="32x32"
@@ -60,6 +64,7 @@
       href="assets/icons/favicon.png"
     />
     <link rel="shortcut icon" href="assets/icons/favicon.png" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   </head>
   <body>
     <header class="header">
@@ -86,7 +91,6 @@
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
-            <a href="blog.html">Blog</a>
             <a href="contact.html">Contact</a>
             <a class="cta-primary" href="quote.html">Get a Free Quote</a>
           </div>
@@ -96,7 +100,7 @@
 
     <main class="container">
       <section class="hero" aria-label="Hero">
-        <div>
+        <div class="slide-in-left">
           <div class="eyebrow">Licensed & Insured • Nationwide</div>
           <h1>Transform Your Bathroom with Premium Remodeling</h1>
           <p class="lead">
@@ -107,7 +111,9 @@
           <div
             style="margin-top: 16px; display: flex; gap: 10px; flex-wrap: wrap"
           >
-            <a class="btn" href="quote.html">Get a Free Quote</a>
+            <a class="btn pulse-animation" href="quote.html"
+              >Get a Free Quote</a
+            >
             <a class="btn secondary" href="contact.html"
               >Schedule a Consultation</a
             >
@@ -118,7 +124,7 @@
             <div class="badge">Fast Turnaround</div>
           </div>
         </div>
-        <div class="hero-illustration">
+        <div class="hero-illustration slide-in-right">
           <img
             src="assets/images/hero-bath.jpeg"
             alt="Modern remodeled bathroom with shower and freestanding tub"
@@ -132,59 +138,157 @@
           From quick liner replacements to full remodels, our expert teams
           deliver lasting results.
         </p>
-        <div class="cards" style="margin-top: 12px">
-          <article class="card">
-            <h3>Tub-to-Shower Conversion</h3>
-            <p>
-              Convert your bathtub into an accessible, modern shower—ideal for
-              mobility and modern design.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Walk-In Tubs</h3>
-            <p>
-              Safe, comfortable walk-in tubs for seniors and those with mobility
-              concerns.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Wall Systems & Liners</h3>
-            <p>
-              Durable acrylic walls and liners for a quick, waterproof refresh.
-            </p>
-          </article>
+
+        <div class="services-layout" style="margin-top: 18px">
+          <div class="service-row">
+            <div class="service-image">
+              <img
+                src="assets/images/tub-to-shower.jpg"
+                alt="Tub-to-shower conversion"
+              />
+              <div class="service-label">TUB-TO-SHOWER<br />CONVERSION</div>
+            </div>
+            <div class="service-info">
+              <div class="kicker">SERVICE SEGMENT</div>
+              <h3>Tub-to-Shower Conversion</h3>
+              <p>
+                Convert your bathtub into an accessible, modern shower—ideal for
+                mobility and elegant design.
+              </p>
+              <a class="discover" href="services.html#tub-to-shower"
+                >Discover More —</a
+              >
+            </div>
+          </div>
+
+          <div class="service-row reverse">
+            <div class="service-image">
+              <img src="assets/images/walk-to-tub.jpeg" alt="Walk-in tubs" />
+              <div class="service-label">WALK—IN<br />TUBS</div>
+            </div>
+            <div class="service-info">
+              <div class="kicker">SERVICE SEGMENT</div>
+              <h3>Walk-In Tubs</h3>
+              <p>
+                Safe, comfortable walk-in tubs for seniors and those with
+                mobility concerns without compromising style.
+              </p>
+              <a class="discover" href="services.html#walk-in-tubs"
+                >Discover More —</a
+              >
+            </div>
+          </div>
+
+          <div class="service-row">
+            <div class="service-image">
+              <img
+                src="assets/images/wall-sys.jpeg"
+                alt="Wall systems & liners"
+              />
+              <div class="service-label">WALL SYSTEMS</div>
+            </div>
+            <div class="service-info">
+              <div class="kicker">SERVICE SEGMENT</div>
+              <h3>Wall Systems & Liners</h3>
+              <p>
+                Durable acrylic walls and liners for a quick, waterproof refresh
+                that looks like premium marble.
+              </p>
+              <a class="discover" href="services.html#liners"
+                >Discover More —</a
+              >
+            </div>
+          </div>
         </div>
       </section>
 
-      <section style="margin-top: 28px">
-        <h2>Why Homeowners Trust Us</h2>
-        <div class="benefits" style="margin-top: 12px">
-          <div class="benefit">
-            <div class="icon">✔</div>
-            <div>
-              <h4>Licensed Contractors</h4>
-              <p class="small">
-                Every project is handled by vetted, licensed professionals.
-              </p>
+      <section class="protocol-section" style="margin-top: 48px">
+        <div class="protocol-grid">
+          <div class="protocol-left">
+            <div class="protocol-eyebrow">SERVICE PROTOCOL</div>
+            <h2 class="protocol-title">
+              Transparent <span class="protocol-italic">Excellence.</span>
+            </h2>
+            <div class="protocol-divider"></div>
+            <p class="protocol-desc">
+              Our process is an open book. We provide absolute clarity at every
+              junction, ensuring your journey to a new bathroom is as stunning
+              as the destination.
+            </p>
+          </div>
+          <div class="protocol-steps">
+            <div class="protocol-card">
+              <div class="protocol-step">01</div>
+              <div class="protocol-card-title">Conceptualize</div>
+              <div class="protocol-card-desc">
+                Defining the aesthetic vision and safety requirements.
+              </div>
+            </div>
+            <div class="protocol-card">
+              <div class="protocol-step">02</div>
+              <div class="protocol-card-title">Designate</div>
+              <div class="protocol-card-desc">
+                Allocating the world’s finest materials to your custom build.
+              </div>
+            </div>
+            <div class="protocol-card">
+              <div class="protocol-step">03</div>
+              <div class="protocol-card-title">Instantiate</div>
+              <div class="protocol-card-desc">
+                Master-class installation, delivered with impeccable timing.
+              </div>
             </div>
           </div>
-          <div class="benefit">
-            <div class="icon">🛠</div>
-            <div>
-              <h4>Quality Materials</h4>
-              <p class="small">
-                We use premium acrylics, hardware, and waterproofing systems.
-              </p>
+        </div>
+      </section>
+
+      <section class="why-trust" style="margin-top: 28px">
+        <div class="why-trust-grid">
+          <div class="why-trust-cards">
+            <div class="trust-card">
+              <div class="trust-card-icon">
+                <i data-lucide="check-circle" class="lucide-icon"></i>
+              </div>
+              <div>
+                <h4>Licensed Contractors</h4>
+                <p class="small">
+                  Every project is handled by vetted, licensed professionals.
+                </p>
+              </div>
+            </div>
+
+            <div class="trust-card">
+              <div class="trust-card-icon">
+                <i data-lucide="wrench" class="lucide-icon"></i>
+              </div>
+              <div>
+                <h4>Quality Materials</h4>
+                <p class="small">
+                  We use premium acrylics, hardware, and waterproofing systems.
+                </p>
+              </div>
+            </div>
+
+            <div class="trust-card">
+              <div class="trust-card-icon">
+                <i data-lucide="clock" class="lucide-icon"></i>
+              </div>
+              <div>
+                <h4>Fast Turnaround</h4>
+                <p class="small">
+                  Most conversions completed in 1–3 days depending on scope.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="benefit">
-            <div class="icon">⏱</div>
-            <div>
-              <h4>Fast Turnaround</h4>
-              <p class="small">
-                Most conversions completed in 1–3 days depending on scope.
-              </p>
-            </div>
+
+          <div class="why-trust-left">
+            <h2>Why Homeowners Trust Us</h2>
+            <p class="small" style="margin-top: 12px; max-width: 48ch">
+              We work with independent, vetted installers and use premium
+              materials so every project is completed with professionalism,
+              transparency, and respect for your home.
+            </p>
           </div>
         </div>
       </section>
@@ -199,6 +303,126 @@
           </div>
           <div>
             <a class="btn" href="quote.html">Request Free Quote</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="comfort-safety" style="margin-top: 28px">
+        <h2>Bathroom Remodeling Designed for Comfort & Safety</h2>
+        <p class="small">
+          Many homeowners choose LuxuryBath Studio to improve safety,
+          accessibility, and ease of use — without sacrificing style.
+        </p>
+
+        <div class="benefits" style="margin-top: 12px">
+          <div class="benefit">
+            <div class="icon">
+              <i data-lucide="shower-head" class="lucide-icon"></i>
+            </div>
+            <div>
+              <h4>Low-Threshold Showers</h4>
+              <p class="small">
+                Reduce slip risks with barrier-free shower entries and anti-slip
+                flooring.
+              </p>
+            </div>
+          </div>
+
+          <div class="benefit">
+            <div class="icon">
+              <i data-lucide="armchair" class="lucide-icon"></i>
+            </div>
+            <div>
+              <h4>Built-In Seating & Grab Bars</h4>
+              <p class="small">
+                Optional safety features for seniors and those with limited
+                mobility.
+              </p>
+            </div>
+          </div>
+
+          <div class="benefit">
+            <div class="icon">
+              <i data-lucide="sparkles" class="lucide-icon"></i>
+            </div>
+            <div>
+              <h4>Easy-to-Clean Surfaces</h4>
+              <p class="small">
+                Mold-resistant acrylic wall systems that stay beautiful for
+                years.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="nationwide" style="margin-top: 28px">
+        <div class="glass-card">
+          <div class="glass-card-header">
+            <div class="glass-icon">
+              <i data-lucide="map-pin" class="lucide-icon"></i>
+            </div>
+            <h2>Nationwide Bathroom Remodeling Services</h2>
+          </div>
+          <div class="glass-card-content">
+            <p>
+              LuxuryBath Studio connects homeowners with trusted bathroom
+              remodeling professionals across the United States. Whether you
+              live in a major city or a suburban community, we help match you
+              with qualified local installers.
+            </p>
+
+            <div class="services-grid">
+              <div class="service-item">
+                <i data-lucide="refresh-cw" class="lucide-icon small"></i>
+                <span>Tub-to-Shower Conversions</span>
+              </div>
+              <div class="service-item">
+                <i data-lucide="bath" class="lucide-icon small"></i>
+                <span>Walk-In Tubs</span>
+              </div>
+              <div class="service-item">
+                <i data-lucide="replace" class="lucide-icon small"></i>
+                <span>Bathtub Replacements</span>
+              </div>
+              <div class="service-item">
+                <i data-lucide="shield" class="lucide-icon small"></i>
+                <span>Shower Liners</span>
+              </div>
+              <div class="service-item">
+                <i data-lucide="layers" class="lucide-icon small"></i>
+                <span>Acrylic Wall Systems</span>
+              </div>
+              <div class="service-item">
+                <i data-lucide="home" class="lucide-icon small"></i>
+                <span>Full Bathroom Renovations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top: 28px">
+        <div class="glass-card">
+          <div class="glass-card-header">
+            <div class="glass-icon">
+              <i data-lucide="users" class="lucide-icon"></i>
+            </div>
+            <h2>Trusted by Homeowners Nationwide</h2>
+          </div>
+          <div class="glass-card-content">
+            <p>
+              We work exclusively with independent service providers who meet
+              strict quality, licensing, and insurance standards. Your project
+              is completed with professionalism, transparency, and respect for
+              your home.
+            </p>
+
+            <div class="trust">
+              <div class="badge">Background-Checked Installers</div>
+              <div class="badge">Warranty-Backed Work</div>
+              <div class="badge">No-Pressure Estimates</div>
+            </div>
           </div>
         </div>
       </section>
@@ -262,6 +486,10 @@
       </div>
     </footer>
 
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -9,9 +9,27 @@
       content="Professional bathtub and shower installations — acrylic, freestanding tubs, custom showers, waterproofing, and trim for a polished finish."
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon.png" />
-    <link rel="icon" type="image/svg+xml" href="assets/icons/logo-placeholder.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Merriweather:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon.png"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/icons/logo-placeholder.svg"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/favicon.png"
+    />
     <link rel="shortcut icon" href="assets/icons/favicon.png" />
   </head>
   <body>
@@ -19,7 +37,7 @@
       <div class="container header-inner">
         <div class="logo">
           <img
-            src="assets/icons/logo-placeholder.svg"
+            src="assets/images/logo-without-bg.png"
             alt="LuxuryBath Studio logo"
           />
           <div>
@@ -40,7 +58,6 @@
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
             <!-- Portfolio removed -->
-            <a href="blog.html">Blog</a>
             <a href="contact.html">Contact</a>
             <a class="cta-primary" href="quote.html">Get a Free Quote</a>
           </div>
@@ -48,16 +65,114 @@
       </div>
     </header>
     <main class="container">
-      <section style="padding: 28px 0">
-        <h1>Bathtubs & Showers</h1>
+      <section class="internal-hero" aria-labelledby="bathtubs-heading">
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li aria-current="page">Bathtubs &amp; Showers</li>
+          </ol>
+        </nav>
+        <div class="hero-inner">
+          <div>
+            <h1 id="bathtubs-heading">Bathtub & Shower Installations</h1>
+            <p class="lead">
+              Professional installations — acrylic walls, freestanding tubs,
+              custom showers, and waterproofing for a lasting finish.
+            </p>
+            <div
+              style="
+                margin-top: 16px;
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+              "
+            >
+              <a class="cta-primary" href="quote.html"
+                >Request an Installation Quote</a
+              >
+              <a class="cta-secondary" href="contact.html">Contact Our Team</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top: 20px">
+        <h2>What we install</h2>
+        <p class="small">
+          From quick bathtub replacements to fully tiled showers and acrylic
+          wall systems — our installers follow strict waterproofing and finish
+          standards.
+        </p>
+
+        <div
+          class="features"
+          style="
+            margin-top: 14px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+          "
+        >
+          <div class="feature glass-card">
+            <div class="feature-icon">
+              <i data-lucide="replace" class="lucide-icon"></i>
+            </div>
+            <h4>Bathtub Replacements</h4>
+            <p class="small">
+              Fast, watertight tub swaps with finished trim and caulking.
+            </p>
+          </div>
+          <div class="feature glass-card">
+            <div class="feature-icon">
+              <i data-lucide="shower" class="lucide-icon"></i>
+            </div>
+            <h4>Custom Showers</h4>
+            <p class="small">
+              Curbless or framed showers with premium fixtures and
+              waterproofing.
+            </p>
+          </div>
+          <div class="feature glass-card">
+            <div class="feature-icon">
+              <i data-lucide="layers" class="lucide-icon"></i>
+            </div>
+            <h4>Acrylic Wall Systems</h4>
+            <p class="small">
+              Durable, low-maintenance surfaces that look like stone.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top: 20px">
+        <h3>Why choose us</h3>
+        <ul class="small">
+          <li>Licensed, insured installers with warranty-backed work</li>
+          <li>Clear timelines and transparent pricing</li>
+          <li>Focus on accessibility, safety, and lasting finishes</li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-row row" style="gap: 24px">
         <div class="col">
           <div class="kicker">LuxuryBath Studio</div>
-          <p class="small">LuxuryBath Studio is an online platform that helps homeowners connect with independent bathroom remodeling service providers for renovation, installation, and upgrade solutions.</p>
-          <p class="small">Service Area: United States<br>Email: <a href="mailto:support@getluxurybath.com">support@getluxurybath.com</a></p>
+          <p class="small">
+            LuxuryBath Studio is an online platform that helps homeowners
+            connect with independent bathroom remodeling service providers for
+            renovation, installation, and upgrade solutions.
+          </p>
+          <p class="small">
+            Service Area: United States<br />Email:
+            <a href="mailto:support@getluxurybath.com"
+              >support@getluxurybath.com</a
+            >
+          </p>
         </div>
         <div class="col">
           <h4>Quick Links</h4>
-          <ul style="list-style:none;padding:0;margin:0">
+          <ul style="list-style: none; padding: 0; margin: 0">
             <li><a href="services.html">Services</a></li>
             <li><a href="process.html">Process</a></li>
             <li><a href="services.html#styles">Styles</a></li>
@@ -67,7 +182,7 @@
         </div>
         <div class="col">
           <h4>Legal</h4>
-          <ul style="list-style:none;padding:0;margin:0">
+          <ul style="list-style: none; padding: 0; margin: 0">
             <li><a href="privacy.html">Privacy Policy</a></li>
             <li><a href="terms.html">Terms of Service</a></li>
             <li><a href="cookie.html">Cookie Policy</a></li>
@@ -75,50 +190,31 @@
         </div>
         <div class="col">
           <h4>Website Operator</h4>
-          <p class="small">SHOPCANARY s.r.o.<br>Rybná 716/24, Staré Město, 110 00 Praha 1, Czech Republic<br>Company Registration No.: C 398373, Municipal Court in Prague</p>
-        </div>
-        <div style="margin-top: 18px">
-          <a class="btn" href="quote.html">Request Installation Quote</a
-          ><a class="btn secondary" href="contact.html" style="margin-left: 8px"
-            >View Models</a
-          >
-        <div class="small">© 2025 getluxurybath.com. All rights reserved.</div>
-        <div class="small">Disclaimer: getluxurybath.com is a free service to assist homeowners in connecting with local service providers. All contractors/providers are independent and getluxurybath.com does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on this site.</div>
-    </main>
-    <footer class="footer">
-      <div
-        class="container"
-        style="
-          display: flex;
-          gap: 24px;
-          flex-wrap: wrap;
-          align-items: flex-start;
-        "
-      >
-        <div class="col">
-          <div class="kicker">LuxuryBath Studio</div>
-          <p class="small">Premium bathroom remodeling.</p>
-        </div>
-        <div class="col">
-          <h4>Contact</h4>
           <p class="small">
-            Phone: (800) 555-0123<br />Email: <a href="mailto:support@getluxurybath.com">support@getluxurybath.com</a>
+            SHOPCANARY s.r.o.<br />Rybná 716/24, Staré Město, 110 00 Praha 1,
+            Czech Republic<br />Company Registration No.: C 398373, Municipal
+            Court in Prague
           </p>
         </div>
       </div>
-      <div
-        class="container"
-        style="
-          margin-top: 20px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        "
-      >
-        <div class="small">© LuxuryBath Studio — All rights reserved</div>
-        <div class="small">Licensed & Insured</div>
+      <div class="container" style="margin-top: 20px; display: grid; gap: 12px">
+        <div class="small">© 2025 getluxurybath.com. All rights reserved.</div>
+        <div class="small">
+          Disclaimer: getluxurybath.com is a free service to assist homeowners
+          in connecting with local service providers. All contractors/providers
+          are independent and getluxurybath.com does not warrant or guarantee
+          any work performed. It is the responsibility of the homeowner to
+          verify that the hired contractor furnishes the necessary license and
+          insurance required for the work being performed. All persons depicted
+          in a photo or video are actors or models and not contractors listed on
+          this site.
+        </div>
       </div>
     </footer>
+    <script>
+      if (window.lucide && typeof lucide.createIcons === "function")
+        lucide.createIcons();
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>

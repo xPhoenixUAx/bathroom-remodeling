@@ -10,6 +10,11 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Merriweather:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link
       rel="icon"
       type="image/png"
       sizes="32x32"
@@ -52,7 +57,6 @@
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
-            <a href="blog.html">Blog</a>
             <a href="contact.html">Contact</a>
             <a class="cta-primary" href="quote.html">Get a Free Quote</a>
           </div>
@@ -80,31 +84,82 @@
               homeowners across the United States.
             </p>
           </div>
-          <div class="about-hero-media">
-            <img
-              src="assets/images/logo-without-bg.png"
-              alt="Remodeled bathroom"
-            />
-          </div>
         </div>
       </section>
 
       <section class="about-intro" style="padding: 28px 0">
-        <h2>Our Mission & Values</h2>
-        <p class="small">
-          We focus on safety, longevity, and modern design. Whether fitting a
-          walk-in tub for accessibility or installing premium acrylic wall
-          systems, our vetted pros prioritize comfort and code-compliant
-          workmanship.
-        </p>
+        <div class="mission-card glass-card">
+          <div class="glass-card-header">
+            <div class="protocol-eyebrow" style="color: var(--accent)">
+              OUR MISSION &amp; VALUES
+            </div>
+          </div>
+          <div class="glass-card-content">
+            <p class="mission-lead">
+              We focus on safety, longevity, and modern design. Whether fitting
+              a walk-in tub for accessibility or installing premium acrylic wall
+              systems, our vetted pros prioritize comfort and code-compliant
+              workmanship.
+            </p>
 
-        <div
-          class="certs"
-          style="margin-top: 16px; display: flex; gap: 10px; flex-wrap: wrap"
-        >
-          <div class="badge">Licensed Pros</div>
-          <div class="badge">5-Year Warranty</div>
-          <div class="badge">Insured & Vetted</div>
+            <div
+              class="mission-badges"
+              style="
+                margin-top: 18px;
+                display: flex;
+                gap: 14px;
+                flex-wrap: wrap;
+              "
+            >
+              <div class="badge">Licensed Pros</div>
+              <div class="badge">5-Year Warranty</div>
+              <div class="badge">Insured &amp; Vetted</div>
+            </div>
+            <p class="small" style="margin-top: 18px; color: var(--muted)">
+              LuxuryBath Studio partners with local installers to provide
+              consistent quality control, centralized customer support, and a
+              single point of contact for scheduling and warranty requests. We
+              carefully vet every installer for licensing, insurance, and a
+              commitment to clean, on-time work.
+            </p>
+
+            <div class="benefits" style="margin-top: 20px">
+              <div class="benefit">
+                <div class="icon">
+                  <i data-lucide="clipboard" class="lucide-icon"></i>
+                </div>
+                <div>
+                  <h4>Transparent Estimates</h4>
+                  <p class="small">
+                    Detailed scope and transparent pricing with no hidden fees.
+                  </p>
+                </div>
+              </div>
+              <div class="benefit">
+                <div class="icon">
+                  <i data-lucide="clock" class="lucide-icon"></i>
+                </div>
+                <div>
+                  <h4>Fast Scheduling</h4>
+                  <p class="small">
+                    We coordinate materials and crews to minimize disruption.
+                  </p>
+                </div>
+              </div>
+              <div class="benefit">
+                <div class="icon">
+                  <i data-lucide="shield" class="lucide-icon"></i>
+                </div>
+                <div>
+                  <h4>Warranty & Support</h4>
+                  <p class="small">
+                    All projects include a workmanship warranty and responsive
+                    support.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -137,6 +192,14 @@
                 </p>
                 <div class="muted">— Sandra P., Orlando, FL</div>
               </article>
+              <article class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="small">
+                  "Excellent communication, tidy crew, and the project finished
+                  ahead of schedule. Highly recommend LuxuryBath Studio."
+                </p>
+                <div class="muted">— Daniel K., Seattle, WA</div>
+              </article>
             </div>
           </div>
           <aside>
@@ -155,51 +218,77 @@
         </div>
       </section>
 
-      <section class="team" style="padding: 18px 0">
-        <h2>Meet Our Team</h2>
-        <p class="small">
-          A network of certified installers, project managers, and customer
-          success specialists ready to guide your project.
-        </p>
-        <div class="team-grid" style="margin-top: 12px">
-          <article class="profile-card team-card">
-            <div class="team-photo">
-              <img src="assets/images/alex.png" alt="Alex Turner" />
+      <section class="team-section" style="padding: 18px 0">
+        <div class="mission-card glass-card team-glass">
+          <div class="glass-card-header">
+            <div class="protocol-eyebrow" style="color: var(--accent)">
+              MEET OUR TEAM
             </div>
-            <div class="team-body">
-              <h4>Alex Turner <span class="tag">Lead Installer</span></h4>
-              <p class="small">
-                Alex brings 15 years of on-site installation experience and
-                leads quality checks on every project.
-              </p>
-            </div>
-          </article>
+          </div>
+          <div class="glass-card-content">
+            <p class="mission-lead">
+              A network of certified installers, project managers, and customer
+              success specialists ready to guide your project. Our regional
+              teams are trained on our installation standards and participate in
+              regular quality reviews to ensure consistency across projects.
+            </p>
 
-          <article class="profile-card team-card">
-            <div class="team-photo">
-              <img src="assets/images/maria.png" alt="Maria Lopez" />
-            </div>
-            <div class="team-body">
-              <h4>Maria Lopez <span class="tag">Project Manager</span></h4>
-              <p class="small">
-                Maria coordinates schedules and materials, ensuring projects run
-                on time and on budget.
-              </p>
-            </div>
-          </article>
+            <div
+              class="team-grid"
+              style="
+                margin-top: 18px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 18px;
+              "
+            >
+              <article class="profile-card team-card glass-card">
+                <div class="team-photo">
+                  <img src="assets/images/alex.png" alt="Alex Turner" />
+                </div>
+                <div class="team-body">
+                  <h4>Alex Turner <span class="tag">Lead Installer</span></h4>
+                  <p class="small">
+                    Alex brings 15 years of on-site installation experience and
+                    leads quality checks on every project. He mentors installers
+                    in accessibility-first installations and reviews every site
+                    during handover.
+                  </p>
+                </div>
+              </article>
 
-          <article class="profile-card team-card">
-            <div class="team-photo">
-              <img src="assets/images/jordan.png" alt="Jordan Smith" />
+              <article class="profile-card team-card glass-card">
+                <div class="team-photo">
+                  <img src="assets/images/maria.png" alt="Maria Lopez" />
+                </div>
+                <div class="team-body">
+                  <h4>Maria Lopez <span class="tag">Project Manager</span></h4>
+                  <p class="small">
+                    Maria coordinates schedules and materials, ensuring projects
+                    run on time and on budget. She handles client briefings and
+                    keeps homeowners informed at every stage.
+                  </p>
+                </div>
+              </article>
+
+              <article class="profile-card team-card glass-card">
+                <div class="team-photo">
+                  <img src="assets/images/jordan.png" alt="Jordan Smith" />
+                </div>
+                <div class="team-body">
+                  <h4>
+                    Jordan Smith <span class="tag">Customer Success</span>
+                  </h4>
+                  <p class="small">
+                    Jordan manages client communication and post-install
+                    follow-up to keep satisfaction high. Jordan also oversees
+                    warranty claims and coordinates rapid responses when
+                    homeowners need support.
+                  </p>
+                </div>
+              </article>
             </div>
-            <div class="team-body">
-              <h4>Jordan Smith <span class="tag">Customer Success</span></h4>
-              <p class="small">
-                Jordan manages client communication and post-install follow-up
-                to keep satisfaction high.
-              </p>
-            </div>
-          </article>
+          </div>
         </div>
       </section>
 
@@ -276,6 +365,11 @@
         </div>
       </div>
     </footer>
+    <script>
+      // Initialize Lucide icons on this page
+      if (window.lucide && typeof lucide.createIcons === "function")
+        lucide.createIcons();
+    </script>
     <script src="js/main.js"></script>
   </body>
 </html>

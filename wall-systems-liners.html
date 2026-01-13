@@ -12,6 +12,11 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Merriweather:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link
       rel="icon"
       type="image/png"
       sizes="32x32"
@@ -34,7 +39,7 @@
       <div class="container header-inner">
         <div class="logo">
           <img
-            src="assets/icons/logo-placeholder.svg"
+            src="assets/images/logo-without-bg.png"
             alt="LuxuryBath Studio logo"
           />
           <div>
@@ -55,7 +60,6 @@
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
             <!-- Portfolio removed -->
-            <a href="blog.html">Blog</a>
             <a href="contact.html">Contact</a>
             <a class="cta-primary" href="quote.html">Get a Free Quote</a>
           </div>
@@ -63,61 +67,182 @@
       </div>
     </header>
     <main class="container">
-      <section style="padding: 28px 0">
-        <h1>Wall Systems & Liners</h1>
-        <p class="lead">
-          Acrylic wall systems and bathtub/shower liners offer a fast,
-          cost-effective refresh. Installed over existing surfaces for minimal
-          disruption and long-term waterproofing.
-        </p>
-        <h2 style="margin-top: 14px">Benefits of Acrylic Walls</h2>
+      <section class="internal-hero" aria-labelledby="walls-heading">
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li aria-current="page">Wall Systems &amp; Liners</li>
+          </ol>
+        </nav>
+        <div class="hero-inner">
+          <div>
+            <h1 id="walls-heading">Acrylic Wall Systems & Shower Liners</h1>
+            <p class="lead">
+              Fast, watertight, and low-maintenance wall systems that refresh
+              bathrooms with minimal disruption.
+            </p>
+            <div
+              style="
+                margin-top: 16px;
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+              "
+            >
+              <a class="cta-primary" href="quote.html">Get a Quick Estimate</a>
+              <a class="cta-secondary" href="contact.html"
+                >Learn About Options</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top: 20px">
+        <h2>Why choose acrylic walls?</h2>
         <p class="small">
-          Non-porous, easy to clean, resistant to mold and mildew, and available
-          in many colors and textures.
+          Acrylic panels install over your existing surface, creating a
+          seamless, non-porous barrier that resists mold and staining while
+          offering a premium finish.
         </p>
-        <div style="margin-top: 18px">
-          <a class="btn" href="quote.html">Get a Quick Estimate</a
-          ><a class="btn secondary" href="contact.html" style="margin-left: 8px"
-            >Learn About Options</a
-          >
+
+        <div
+          class="features"
+          style="
+            margin-top: 14px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+          "
+        >
+          <article class="glass-card">
+            <div class="card-icon">
+              <i data-lucide="droplet" class="lucide-icon"></i>
+            </div>
+            <h4>Waterproof Seal</h4>
+            <p class="small">
+              Engineered joints and tight seams for lasting protection.
+            </p>
+          </article>
+
+          <article class="glass-card">
+            <div class="card-icon">
+              <i data-lucide="sparkles" class="lucide-icon"></i>
+            </div>
+            <h4>Low Maintenance</h4>
+            <p class="small">
+              Non-porous finish wipes clean — no grout or tile upkeep.
+            </p>
+          </article>
+
+          <article class="glass-card">
+            <div class="card-icon">
+              <i data-lucide="clock" class="lucide-icon"></i>
+            </div>
+            <h4>Fast Install</h4>
+            <p class="small">
+              Most installs completed in a single day — minimal downtime.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section style="margin-top: 20px">
+        <h3>Typical installation steps</h3>
+        <ol class="small">
+          <li>Assess and prepare surface — remove fixtures as needed.</li>
+          <li>Custom-fit acrylic panels and ensure waterproof junctions.</li>
+          <li>Reinstall hardware and test seals; final quality walkthrough.</li>
+        </ol>
+      </section>
+
+      <section style="margin-top: 20px">
+        <h3>Frequently asked questions</h3>
+        <details class="small">
+          <summary>Are acrylic walls durable?</summary>
+          <p class="small">
+            Yes — high-quality acrylic panels resist cracking and discoloration
+            when installed correctly.
+          </p>
+        </details>
+        <details class="small">
+          <summary>Will the install reveal underlying damage?</summary>
+          <p class="small">
+            If underlying rot or water damage is found, we will notify you and
+            provide repair options before completing the install.
+          </p>
+        </details>
+      </section>
+
+      <section style="margin-top: 20px">
+        <div class="glass-card">
+          <h3>Ready for a refresh?</h3>
+          <p class="small">
+            Request a fast, no-obligation estimate and get matched with a
+            licensed installer in your area.
+          </p>
+          <div style="margin-top: 12px">
+            <a class="cta-primary" href="quote.html">Request Estimate</a>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div
-        class="container"
-        style="
-          display: flex;
-          gap: 24px;
-          flex-wrap: wrap;
-          align-items: flex-start;
-        "
-      >
+      <div class="container footer-row row" style="gap: 24px">
         <div class="col">
           <div class="kicker">LuxuryBath Studio</div>
-          <p class="small">Premium bathroom remodeling.</p>
-        </div>
-        <div class="col">
-          <h4>Contact</h4>
           <p class="small">
-            Phone: (800) 555-0123<br />Email:
+            LuxuryBath Studio is an online platform that helps homeowners
+            connect with independent bathroom remodeling service providers for
+            renovation, installation, and upgrade solutions.
+          </p>
+          <p class="small">
+            Service Area: United States<br />Email:
             <a href="mailto:support@getluxurybath.com"
               >support@getluxurybath.com</a
             >
           </p>
         </div>
+        <div class="col">
+          <h4>Quick Links</h4>
+          <ul style="list-style: none; padding: 0; margin: 0">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="services.html#styles">Styles</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Legal</h4>
+          <ul style="list-style: none; padding: 0; margin: 0">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="cookie.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Website Operator</h4>
+          <p class="small">
+            SHOPCANARY s.r.o.<br />Rybná 716/24, Staré Město, 110 00 Praha 1,
+            Czech Republic<br />Company Registration No.: C 398373, Municipal
+            Court in Prague
+          </p>
+        </div>
       </div>
-      <div
-        class="container"
-        style="
-          margin-top: 20px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        "
-      >
-        <div class="small">© LuxuryBath Studio — All rights reserved</div>
-        <div class="small">Licensed & Insured</div>
+      <div class="container" style="margin-top: 20px; display: grid; gap: 12px">
+        <div class="small">© 2025 getluxurybath.com. All rights reserved.</div>
+        <div class="small">
+          Disclaimer: getluxurybath.com is a free service to assist homeowners
+          in connecting with local service providers. All contractors/providers
+          are independent and getluxurybath.com does not warrant or guarantee
+          any work performed. It is the responsibility of the homeowner to
+          verify that the hired contractor furnishes the necessary license and
+          insurance required for the work being performed. All persons depicted
+          in a photo or video are actors or models and not contractors listed on
+          this site.
+        </div>
       </div>
     </footer>
     <script src="js/main.js"></script>
